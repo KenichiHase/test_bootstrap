@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="jp" style="scroll-padding-top:20px;">
-
+    <style>
+        #hero, #feature, #showcases, #cta, #price, #faq{
+        position: relative;
+        }
+        #hero:after, #feature:after, #showcases:after, #cta:after, #price:after, #faq:after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        margin: auto;
+        border-style: solid;
+        border-width: 20px 20px 0 20px;
+        z-index: 100;
+        }
+    
+        #hero:after, #showcases:after, #faq:after , #price:after{
+            border-color: #f8f9fa transparent transparent transparent;
+        } 
+        #cta:after, #feature:after{
+            /* border-color: #f8f9fa transparent transparent transparent; */
+            border-color: #278a3e transparent transparent transparent;
+        }
+    </style>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +34,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="icon" href="/test_bootstrap/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="page-top">
@@ -118,7 +144,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="bg-success text-white py-5">
+    <section class="bg-success text-white py-5" id="cta">
         <div class="container overflow-hidden" data-aos="zoom-in" data-aos-delay="0">
             <div class="row text-center">
                 <div class="col">
@@ -222,13 +248,13 @@
                             <h2 class="accordion-header" id="heading1">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                    <p>Q. 途中でプランを変更することは可能でしょうか？</p>
+                                    <p>Q. 途中でプランを変更することは可能ですか？</p>
                                 </button>
                             </h2>
                             <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
                                 data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body">
-                                    A. 可能です。
+                                    A. 可能です。別途問い合わせフォームからご相談ください。
                                 </div>
                             </div>
                         </div>
@@ -275,7 +301,7 @@
                 <div class="col">
                     <h3 class="py-5">お問い合わせ</h3>
                     <p class="lead">ご不明点や不安な点は以下のフォームよりご相談ください</p>
-                    <p class="lead py-3"><a href="https://docs.google.com/forms/d/e/XXX/viewform" class="btn btn-lg btn-outline-dark" target="_blank">お問い合わせはこちら</a></p>
+                    <p class="lead py-3"><a href="https://docs.google.com/forms/d/e/XXX/viewform" class="btn btn-lg btn-success" target="_blank">お問い合わせはこちら</a></p>
                 </div>
             </div>
         </div>
@@ -337,11 +363,16 @@
         <div class="container">
             <div class="row">
                 <div class="col"><a href="https://monomonotech.jp/" class="text-decoration-none text-white">&copy; ミライプラン</a></div>
-                <div class="col text-end"><a href="#" class="text-decoration-none text-white"><i class="bi bi-chevron-up"></i> Back to top</a></div>
             </div>
         </div>
     </footer>
     
+
+
+    
+    <!-- ページトップ -->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="bi bi-chevron-up"></i></a>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -350,5 +381,6 @@
             once: true,
         });
     </script>
+    <script src="test.js"></script>
 </body>
 </html>
