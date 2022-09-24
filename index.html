@@ -2,16 +2,16 @@
 <html lang="jp" style="scroll-padding-top:20px;">
 
 <head>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ミライプラン</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" href="/test_bootstrap/favicon.ico">
 </head>
 
-<body>
+<body id="page-top">
 <!-- NAV -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -27,25 +27,26 @@
                     <li class="nav-item"><a class="nav-link" href="#showcases">詳細</a></li>
                     <li class="nav-item"><a class="nav-link" href="#price">プラン</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">メンバー</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#team">メンバー</a></li> -->
                 </ul>
-                <a class="btn btn-dark btn-sm text-white" href="#">無料で始める</a>
+                <a class="btn btn-dark btn-sm text-white" href="#">一歩踏み出す</a>
             </div>
         </div>
     </nav>
     
     <!-- HERO -->
-    <section class="bg-primary text-white py-5" id="hero">
+    <section class="bg-success text-white py-5" id="hero">
         <div class="container overflow-hidden">
             <div class="row flex-lg-row-reverse align-items-center">
-                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="0">
-                    <img src="https://doodleipsum.com/700x394/flat?i=41f017cf42bb4f905a48613ec87b613b"
-                        class="img-fluid">
+                <div class="col-lg-6">
+                    <img src="./hero.png" class="img-fluid">
+                    <!-- <img src="https://doodleipsum.com/700x394/flat?i=41f017cf42bb4f905a48613ec87b613b"
+                        class="img-fluid"> -->
                 </div>
-                <div class="col-lg-6" data-aos="slide-up" data-aos-delay="0">
-                    <p class="badge bg-warning text-white mb-1">HTMLだけでコーディング(これがバッジ)</p>
-                    <h1>Bootstrap超入門</h1>
-                    <p class="lead">Webプログラミング初心者がこのページを作れるようになる。</p>
+                <div class="col-lg-6">
+                    <p class="badge bg-warning text-white mb-1">あなたの人生を再設計</p>
+                    <h2>何かやりたい。でも何やればわからない。</h2>
+                    <p class="lead">やりたいことがみつかる・実現できるまでの道のりが３ステップで分かる！</p>
                 </div>
             </div>
         </div>
@@ -56,19 +57,19 @@
         <div class="container overflow-hidden">
             <div class="row text-center">
                 <div class="col-md-4 mb-3"  data-aos="zoom-in" data-aos-delay="0">
-                    <div class="fs-1 text-primary"><i class="bi bi-film"></i></div>
-                    <h5>物語りがある</h5>
-                    <p class="text-muted">「実用的に使える」または「新しい体験ができる」をテーマに、必要最小限の技術を使ってストーリーを展開し伏線を回収するコンテンツです。</p>
+                    <div class="fs-1 text-success"><i class="bi bi-arrow-through-heart"></i></div>
+                    <h5>１．「やりたいこと」を選択する</h5>
+                    <p class="text-muted">多種多様な職種から、あなたのやりたいこと・気になることを選択します。</p>
                 </div>
                 <div class="col-md-4 mb-3"  data-aos="zoom-in" data-aos-delay="0">
-                    <div class="fs-1 text-primary"><i class="bi bi-tools"></i></div>
-                    <h5>新しいものづくり</h5>
-                    <p class="text-muted">「ハードウェアだけでなく、プログラミングやデータサイエンスも１つのツールとして活用する「新しい時代のものづくり」です。</p>
+                    <div class="fs-1 text-success"><i class="bi bi-calendar-range"></i></div>
+                    <h5>２．計画を立てる</h5>
+                    <p class="text-muted">やりたいことを実現するまでに必要なことから、いつまでに何をするかを計画しましょう</p>
                 </div>
                 <div class="col-md-4 mb-3"  data-aos="zoom-in" data-aos-delay="0">
-                    <div class="fs-1 text-primary"><i class="bi bi-award"></i></div>
-                    <h5>モノにする</h5>
-                    <p class="text-muted">技術要素をステップバイステップで学びながら、演習で試行錯誤を行い、自ら考え成果物を作り上げるスタイルです。</p>
+                    <div class="fs-1 text-success"><i class="bi bi-card-checklist"></i></div>
+                    <h5>３．実行し進捗管理する</h5>
+                    <p class="text-muted">計画に対し、あなたが実行した結果を入力することで進捗か管理できます</p>
                 </div>
             </div>
         </div>
@@ -79,54 +80,57 @@
         <div class="container overflow-hidden">
             <div class="row mb-5 align-items-center">
                 <div class="col-lg-6 order-lg-1" data-aos="zoom-in-right" data-aos-delay="0">
-                    <img class="img-fluid"
-                        src="https://doodleipsum.com/700x394/hand-drawn?i=0e05d2d124e0a86b24727ce6006b739a">
+                    <img src="./showcase1.png" class="img-fluid">
+                    <!-- <img class="img-fluid"
+                        src="https://doodleipsum.com/700x394/hand-drawn?i=0e05d2d124e0a86b24727ce6006b739a"> -->
                 </div>
-                <div class="col-lg-6 order-lg-2" data-aos="slide-left" data-aos-delay="0">
-                    <span class="display-3 text-primary">01</span>
-                    <h3>物語りのあるコンテンツ</h3>
-                    <p>網羅的な説明が書かれたコンテンツではなく、映画のようにこころを動かすコンテンツを目指しています。シナリオ作りから検証を重ねて作成しています。</p>
+                <div class="col-lg-6 order-lg-2" data-aos="slide-left" data-aos-delay="200">
+                    <span class="display-3 text-success">01</span>
+                    <h3>「やりたいこと」を選択する</h3>
+                    <p>用意された多種多様な職種やモノゴトから、あなたのやりたいことを選択。やりたいことが無くても気になるものはありませんか？</p>
                 </div>
             </div>
             <div class="row mb-5 align-items-center">
                 <div class="col-lg-6 order-lg-2" data-aos="zoom-in-left" data-aos-delay="0">
-                    <img class="img-fluid"
-                        src="https://doodleipsum.com/700x394/hand-drawn?i=4a51d1ffc4e6797c11a5b4c7cc33cda6">
+                    <img src="./showcase2.png" class="img-fluid">
+                    <!-- <img class="img-fluid"
+                        src="https://doodleipsum.com/700x394/hand-drawn?i=4a51d1ffc4e6797c11a5b4c7cc33cda6"> -->
                 </div>
-                <div class="col-lg-6 order-lg-1" data-aos="slide-right" data-aos-delay="0">
-                    <span class="display-3 text-primary">02</span>
-                    <h3>新しい時代のものづくり</h3>
-                    <p>数十年の間に「ものづくり製品」から「ウェブサービス」へ時代が一変しましたが、更に時代は変化し続けます。画面の中だけの世界ではなく、リアルな世界に作用するものにこだわっています。</p>
+                <div class="col-lg-6 order-lg-1" data-aos="slide-right" data-aos-delay="200">
+                    <span class="display-3 text-success">02</span>
+                    <h3>計画を立てる</h3>
+                    <p>「やりたいこと」を達成するまでに必要な事と時間から、いつまでに何をやるかをご提案。もちろんあなたのペースに合わせて変更できます。</p>
                 </div>
             </div>
             <div class="row mb-5 align-items-center">
                 <div class="col-lg-6 order-lg-1" data-aos="zoom-in-right" data-aos-delay="0">
-                    <img class="img-fluid"
-                        src="https://doodleipsum.com/700x394/hand-drawn?i=0293217a2126d91159f5a6717396cbe4">
+                    <img src="./showcase3.png" class="img-fluid">
+                    <!-- <img class="img-fluid"
+                        src="https://doodleipsum.com/700x394/hand-drawn?i=0293217a2126d91159f5a6717396cbe4"> -->
                 </div>
-                <div class="col-lg-6 order-lg-2"  data-aos="slide-left" data-aos-delay="0">
-                    <span class="display-3 text-primary">03</span>
-                    <h3>ステップバイステップでモノにする</h3>
-                    <p>「ものものテック」では創業以来、毎年多数のリアルなハンズオンを企業・自治体・大学・各種イベント等で実施しています。リアルな教育でのエッセンスや最適化された難易度で皆さんの学びを加速します。
-                    </p>
+                <div class="col-lg-6 order-lg-2"  data-aos="slide-left" data-aos-delay="200">
+                    <span class="display-3 text-success">03</span>
+                    <h3>実行し進捗管理する</h3>
+                    <p>実績を入力すると自動で進捗を管理。遅れが発生しても大丈夫、新しい計画をご提案。「やりたいこと」は変わってませんか？再計画することも可能です。</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="bg-primary text-white py-5">
+    <section class="bg-success text-white py-5">
         <div class="container overflow-hidden" data-aos="zoom-in" data-aos-delay="0">
             <div class="row text-center">
                 <div class="col">
-                    <h3 class="py-5">あなたの物語を実現しよう！</h3>
-                    <p class="lead">ほぼCSSやJavaScriptは記述せずに、HTMLのコーディングだけでランディングページを作れます。</p>
-                    <p class="lead py-3"><a href="#" class="btn btn-lg btn-outline-light">学習を始める</a></p>
+                    <h3 class="py-5">あなたの「やりたいこと」を実現させよう！</h3>
+                    <p class="lead">やりたいことがある人も・ない人も、はじめの一歩を踏み出してみませんか？</p>
+                    <p class="lead py-3"><a href="#" class="btn btn-lg btn-outline-light">一歩踏み出す</a></p>
                 </div>
+                
             </div>
         </div>
     </section>
-    
+
     <!-- PRICE -->
     <section class="bg-light py-5" id="price">
         <div class="container overflow-hidden">
@@ -144,8 +148,9 @@
                                     /月</span></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                                <li class="text-muted text-decoration-line-through">全ての学習コンテンツ閲覧</li>
-                                <li class="text-muted text-decoration-line-through">講師による講義</li>
+                                <li><i class="bi-check-lg text-success"></i>「やりたいこと」を探す</li>
+                                <li class="text-muted text-decoration-line-through">実現計画を作成する</li>
+                                <li class="text-muted text-decoration-line-through">進捗を管理・リスケ</li>
                                 <li class="text-muted text-decoration-line-through">メンターによるサポート</li>
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-outline-dark">すぐに試す</button>
@@ -153,39 +158,44 @@
                     </div>
                 </div>
                 <div class="col" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card mb-4 shadow border-primary">
-                        <div class="card-header py-3 border-primary bg-primary text-white">
-                            <h4 class="my-0 fw-normal">個人プラン</h4>
+                    <div class="card mb-4 shadow border-success">
+                        <div class="card-header py-3 border-success bg-success text-white">
+                            <h4 class="my-0 fw-normal">プランA</h4>
                         </div>
                         <div class="card-body">
                             <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-muted fw-light">
-                                    /月（今だけ特別！）</span></h1>
+                                    /月</span></h1>
+
+                            <!-- <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-muted fw-light">
+                                    /月（今だけ特別！）</span></h1> -->
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                                <li><i class="bi-check-lg text-success"></i>全ての学習コンテンツ閲覧</li>
-                                <li class="text-muted text-decoration-line-through">講師による講義</li>
+                                <li><i class="bi-check-lg text-success"></i>「やりたいこと」を探す</li>
+                                <li><i class="bi-check-lg text-success"></i>実現計画を作成する</li>
+                                <li><i class="bi-check-lg text-success"></i>進捗を管理・リスケ</li>
                                 <li class="text-muted text-decoration-line-through">メンターによるサポート</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">登録・ログイン</button>
+                            <button type="button" class="w-100 btn btn-lg btn-success">登録・ログイン</button>
                         </div>
                     </div>
                 </div>
                 <div class="col" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card mb-4 shadow">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">法人プラン</h4>
+                            <h4 class="my-0 fw-normal">プランB</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title fs-1"><span class="h4">¥</span>50,000〜<span
+                            <h1 class="card-title fs-1"><span class="h4">¥</span>500〜<span
                                     class="h4 text-muted fw-light"> /月</span>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                                <li><i class="bi-check-lg text-success"></i>全ての学習コンテンツ閲覧</li>
-                                <li><i class="bi-check-lg text-success"></i>講師による講義</li>
+                                <li><i class="bi-check-lg text-success"></i>「やりたいこと」を探す</li>
+                                <li><i class="bi-check-lg text-success"></i>実現計画を作成する</li>
+                                <li><i class="bi-check-lg text-success"></i>進捗を管理・リスケ</li>
                                 <li><i class="bi-check-lg text-success"></i>メンターによるサポート</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-dark">ご相談ください</button>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-dark">登録・ログイン</button>
                         </div>
                     </div>
                 </div>
@@ -201,8 +211,9 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-3" data-aos="zoom-in-right" data-aos-delay="0">
-                    <img class="img-fluid"
-                        src="https://doodleipsum.com/700x394/flat?i=bcfd79692eeea887b9f20887c5a3a401">
+                    <img src="./faq.png" class="img-fluid">
+                    <!-- <img class="img-fluid"
+                        src="https://doodleipsum.com/700x394/flat?i=bcfd79692eeea887b9f20887c5a3a401"> -->
                 </div>
                 <div class="col-lg-7"  data-aos="zoom-in-left" data-aos-delay="0">
                     <div class="accordion" id="accordionFAQ">
@@ -211,13 +222,13 @@
                             <h2 class="accordion-header" id="heading1">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                    <p>Q. コンテンツは最後まで無料で学習可能なのでしょうか？</p>
+                                    <p>Q. 途中でプランを変更することは可能でしょうか？</p>
                                 </button>
                             </h2>
                             <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
                                 data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body">
-                                    A. 登録するだけで最後まで無料で学習できます。
+                                    A. 可能です。
                                 </div>
                             </div>
                         </div>
@@ -232,7 +243,7 @@
                             <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
                                 data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body">
-                                    A. 登録は無料です。入会金や年会費などもかかりません。よ。
+                                    A. 登録は無料です。プランBを選択した場合のみ料金が発生します。
                                 </div>
                             </div>
                         </div>
@@ -241,28 +252,13 @@
                             <h2 class="accordion-header" id="heading3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    <p>Q. このページは何ですか？</p>
+                                    <p>Q. 途中で退会できますか？</p>
                                 </button>
                             </h2>
                             <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
                                 data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body">
-                                    A. 「Bootstrap超入門」コンテンツのサンプルページです。学ぶことでこのページが最終的に作れるようになります。
-                                </div>
-                            </div>
-                        </div>
-                        <!-- four -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading4">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    <p>Q. 新しい質問！いろいろ４番に変える</p>
-                                </button>
-                            </h2>
-                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                                data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body">
-                                    A. ここに回答を記載する。アコーディオン機能面白い。
+                                    A. 可能です。ただし月額が発生する場合日割りでの返金はございません。
                                 </div>
                             </div>
                         </div>
@@ -272,8 +268,21 @@
         </div>
     </section>
     
+    <!-- CTA -->
+    <section class="bg-light py-5">
+        <div class="container overflow-hidden">
+            <div class="row text-center">
+                <div class="col">
+                    <h3 class="py-5">お問い合わせ</h3>
+                    <p class="lead">ご不明点や不安な点は以下のフォームよりご相談ください</p>
+                    <p class="lead py-3"><a href="https://docs.google.com/forms/d/e/XXX/viewform" class="btn btn-lg btn-outline-dark" target="_blank">お問い合わせはこちら</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- TEAM -->
-    <section class="bg-light p-5" id="team">
+    <!-- <section class="bg-light p-5" id="team">
         <div class="container overflow-hidden">
             <div class="row text-center">
                 <h3 class="mb-4">講師／メンター</h3>
@@ -321,13 +330,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- FOOTER -->
-    <footer class="py-3 bg-primary">
+    <footer class="py-3 bg-success">
         <div class="container">
             <div class="row">
-                <div class="col"><a href="https://monomonotech.jp/" class="text-decoration-none text-white">&copy; ものものテック</a></div>
+                <div class="col"><a href="https://monomonotech.jp/" class="text-decoration-none text-white">&copy; ミライプラン</a></div>
                 <div class="col text-end"><a href="#" class="text-decoration-none text-white"><i class="bi bi-chevron-up"></i> Back to top</a></div>
             </div>
         </div>
@@ -340,6 +349,6 @@
             duration: 1000,
             once: true,
         });
-    </script>    
+    </script>
 </body>
 </html>
