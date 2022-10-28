@@ -34,12 +34,12 @@
 .box {
     width: 500px;       /* 適当な幅を指定 */
     height: 300px;      /* 適当な高さを指定 */
-    position: relative; /* 基準位置とする */
+    position: absolute; /* 基準位置とする */
   }
   
   /* 共通するCSS */
   .box img {
-    width: 300px;       /* 適当な幅を指定 */
+    width: 200px;       /* 適当な幅を指定 */
     position: absolute; /* 相対位置に指定 */
   }
   
