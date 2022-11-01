@@ -39,7 +39,7 @@
   
   /* 共通するCSS */
   .box img {
-    width: 400px;       /* 適当な幅を指定 */
+    width: 250px;       /* 適当な幅を指定 */
     position: absolute; /* 相対位置に指定 */
   }
   
